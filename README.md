@@ -7,4 +7,3 @@ The team members are:
 
 To view the rendered page go to
 https://ilya-ballet.github.io/CO1111/
-
