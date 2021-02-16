@@ -1,8 +1,16 @@
-async function APIlist()
+async function ListTreasures()
 {
-    const response = await fetch("https://codecyprus.org/th/api/list");
-    const reply = await response.text();
-    document.getElementById("list").innerText = reply;
+    let response = await fetch("https://codecyprus.org/th/api/list");
+
+    if (response.ok)
+    {
+        let reply = await response.json();
+        document.getElementById("list").innerText = "The list of Treasure Hunts:" + "\n\n" + reply.treasureHunts[0].name + "\n" + reply.treasureHunts[1].name;
+    }
+    else
+    {
+        alert("HTTP-Error: " + response.status);
+    }
 }
 
-APIlist();
+ListTreasures();
