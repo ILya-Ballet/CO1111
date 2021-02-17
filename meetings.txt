@@ -1,0 +1,26 @@
+This is a list of meetings to show the progress our team has done so far:
+
+
+
+16.02.2021 (discord)
+
+We discusses the roles each teammate should take
+and settled down some github authorization issues
+
+
+(next week) (discord)
+
+A recap of what has already been done + plans for a way
+of implementing documentation and unit testing strategies
+
+
+(week after) (discord)
+
+discuss the bugs currently present (if any)
+and assigning tasks for features left to implement
+
+
+(final week before deadline) (discord)
+
+polishing up the website and comparing it with the assignment
+specification to ensure it meets the requirements.
