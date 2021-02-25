@@ -7,9 +7,9 @@ async function ListTreasures()
     if (response.ok)
     {
         let reply = await response.json();
-        document.getElementById("list").innerText = "The list of Treasure Hunts:" + "\n\n"
-        + reply.treasureHunts[0].name + "\n"
-        + reply.treasureHunts[1].name + "\n\n";
+
+        document.getElementById("TH1").innerText = reply.treasureHunts[0].name;
+        document.getElementById("TH2").innerText = reply.treasureHunts[1].name;
     }
     else alert("HTTP-Error: " + response.status);
 }
