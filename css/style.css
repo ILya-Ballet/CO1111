@@ -20,7 +20,7 @@ body
 	background-color: white;
 	border-radius: 15px;
 	margin-bottom: 100px;
-}
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
 
 .purposeContainer{
 	position:relative;
@@ -30,7 +30,7 @@ body
 	background-color: white;
 	border-radius: 15px;
 	margin-bottom: 100px;
-}
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
 
 .myButton {
 	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
@@ -58,6 +58,25 @@ body
 	position:relative;
 
 }
+
+/*Landing page css ending here*/
+
+
+
+
+/*App page css starting here*/
+
+.challengesContainer{
+	position:relative;
+	background-color: white;
+	width:100%;
+	margin-bottom: 200px;
+	background-color: white;
+	border-radius: 15px;
+	margin-bottom: 100px;
+	font-size:20px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+
 
 
 
