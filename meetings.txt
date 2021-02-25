@@ -8,7 +8,7 @@ We discusses the roles each teammate should take
 and settled down some github authorization issues
 
 
-(next week) (discord)
+25.02.2021 (discord)
 
 A recap of what has already been done + plans for a way
 of implementing documentation and unit testing strategies
