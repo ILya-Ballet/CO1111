@@ -1,3 +1,7 @@
+let replyList;
+let replyStart;
+let nickname = "";
+const appname = "github";
 const APIroot = "https://codecyprus.org/th/api/";
 
 const commands = {
@@ -27,21 +31,24 @@ async function ListTreasures()
         return 0;
     }
 
-    let reply = await response.json();
+    replyList = await response.json();
 
-    document.getElementById("TH1").innerText = reply.treasureHunts[0].name;
-    document.getElementById("TH2").innerText = reply.treasureHunts[1].name;
+    document.getElementById("TH1").innerText = replyList.treasureHunts[0].name;
+    document.getElementById("TH2").innerText = replyList.treasureHunts[1].name;
 }
 
-async function StartTreasure()
+async function StartTreasure(nickname, choice)
 {
-    let response = await fetch(APIroot + commands.START);
+    let response = await fetch(APIroot + commands.START + "?player=" + nickname
+        + "&app=" + appname + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
 
     if (!response.ok)
     {
         alert("HTTP-Error: " + response.status);
         return 0;
     }
+
+    replyStart = await response.json();
 }
 
 ListTreasures();
