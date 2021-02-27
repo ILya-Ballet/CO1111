@@ -25,13 +25,28 @@
 </form>
 
 <p>Question 2 (multiple answers)</p>
+
 <form>
-    <input type="checkbox" id="answer1" name="answer1" value="answer1">
+    <div style="display: inline;">
+    <input type="checkbox"  name="answer1" value="answer1">
     <label for="answer1">answer1</label><br>
-    <input type="checkbox" id="answer2" name="answer2" value="answer2">
+    <input type="checkbox"  name="answer2" value="answer2">
     <label for="answer2">answer2</label><br>
-    <input type="checkbox" id="answer3" name="answer3" value="answer3">
+    <input type="checkbox"  name="answer3" value="answer3">
     <label for="answer3">answer3</label>
+    </div>
+</form>
+
+<!-- add rating ? question ? (maybe something like a questionnaire ? ) -->
+<p>how did you find the tresure hunt ?</p>
+
+<form method="POST">
+            <select>
+                <option value="option1">Fun!</option>
+                <option value="option2">NeedsWork</option>
+                <option value="option3">not playable</option>
+            </select>
+    <input type="submit" id="my_input_submit" value="Submit">
 </form>
 
 
