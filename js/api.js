@@ -1,6 +1,5 @@
 let replyList;
 let replyStart;
-let nickname = "";
 const appname = "github";
 const APIroot = "https://codecyprus.org/th/api/";
 
@@ -14,11 +13,6 @@ const commands = {
     SCORE: "score",
     LEADERBOARD: "leaderboard",
 
-}
-
-function GetNickname()
-{
-    //
 }
 
 async function ListTreasures()
@@ -39,8 +33,9 @@ async function ListTreasures()
 
 async function StartTreasure(nickname, choice)
 {
-    let response = await fetch(APIroot + commands.START + "?player=" + nickname
-        + "&app=" + appname + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
+    let response = await fetch(APIroot + commands.START + "?player="
+    + document.getElementById("nickname").innerText + "&app=" + appname
+    + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
 
     if (!response.ok)
     {
