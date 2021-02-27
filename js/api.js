@@ -1,5 +1,5 @@
-let replyList;
-let replyStart;
+var replyList;
+var replyStart;
 const appname = "github";
 const APIroot = "https://codecyprus.org/th/api/";
 
