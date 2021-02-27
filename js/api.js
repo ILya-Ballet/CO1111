@@ -31,7 +31,7 @@ async function ListTreasures()
     document.getElementById("TH2").innerText = replyList.treasureHunts[1].name;
 }
 
-async function StartTreasure(nickname, choice)
+async function StartTreasure(choice)
 {
     let response = await fetch(APIroot + commands.START + "?player="
     + document.getElementById("nickname").innerText + "&app=" + appname
@@ -44,6 +44,7 @@ async function StartTreasure(nickname, choice)
     }
 
     replyStart = await response.json();
+    alert(replyStart.status); ////
 }
 
 ListTreasures();
