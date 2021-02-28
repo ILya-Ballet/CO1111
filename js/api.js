@@ -1,7 +1,7 @@
 var replyList;
 var replyStart;
 const appname = "github";
-const APIroot = "https://codecyprus.org/th/api/";
+const APIroot = "https://codecyprus.org/th/test-api/"; // switch from "test-api" to "api" on release
 
 const commands = {
     LIST: "list",
@@ -44,7 +44,7 @@ async function StartTreasure(choice)
     }
 
     replyStart = await response.json();
-    alert(replyStart.status); ////
+    alert(replyStart.status); // testing server connection, remove on release
 }
 
 ListTreasures();
