@@ -1,7 +1,7 @@
 var replyList;
 var replyStart;
 const appname = "github";
-const APIroot = "https://codecyprus.org/th/test-api/"; // switch from "test-api" to "api" on release
+const APIroot = "https://codecyprus.org/th/api/"; // "test-api" or "api"
 
 const commands = {
     LIST: "list",
@@ -34,7 +34,7 @@ async function ListTreasures()
 async function StartTreasure(choice)
 {
     let response = await fetch(APIroot + commands.START + "?player="
-    + document.getElementById("nickname").innerText + "&app=" + appname
+    + document.getElementById("nickname").value + "&app=" + appname
     + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
 
     if (!response.ok)
