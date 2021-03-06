@@ -1,12 +1,15 @@
 var replyList;
-var replyStart;
+var replyQuestion;
+var qCount = 0;
+var qTotal;
+var session;
 const appname = "github";
 const APIroot = "https://codecyprus.org/th/api/"; // "test-api" or "api"
 
 const commands = {
     LIST: "list",
     START: "start",
-    QUESTION: "qusestion",
+    QUESTION: "question",
     ANSWER: "answer",
     LOCATION: "location",
     SKIP: "skip",
@@ -43,8 +46,28 @@ async function StartTreasure(choice)
         return 0;
     }
 
-    replyStart = await response.json();
-    alert(replyStart.status); // testing server connection, remove on release
+    let replyStart = await response.json();
+
+    qTotal = replyStart.numOfQuestions;
+    session = replyStart.session;
+}
+
+async function GetQuestion()
+{
+    let response = await fetch(APIroot + commands.QUESTION + "?session=");
+
+    if (!response.ok)
+    {
+        alert("HTTP-Error: " + response.status);
+        return 0;
+    }
+
+    replyQuestion = await response.json();
+}
+
+async function Answer()
+{
+    //
 }
 
 ListTreasures();
