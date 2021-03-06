@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-        <button id="TH1" onclick="StartTreasure(0);"> Loading ... </button>
-        <button id="TH2" onclick="StartTreasure(1);"> Loading ... </button>
+        <form method="get" action="../html/Questions.html">
+            <button id="TH1" onclick="StartTreasure(0); GetQuestion();"> Loading ... </button>
+            <button id="TH2" onclick="StartTreasure(1); GetQuestion();"> Loading ... </button>
+        </form>
+
         <p>Enter your nickname</p>
         <input type="text" id="nickname"/>
-        <script src="../js/api.js"></script>
 
         <div class="startBtnContainer">
             <form method="get" action="../index.html">
                 <button class="myButton2" >Back to Landing Page</button>
             </form>
-
-
         </div>
+
+        <script src="../js/api.js"></script>
 </body>
 </html>

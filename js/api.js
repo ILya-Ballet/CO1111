@@ -1,7 +1,6 @@
 var replyList;
 var replyQuestion;
 var qCount = 0;
-var qTotal;
 var session;
 const appname = "github";
 const APIroot = "https://codecyprus.org/th/api/"; // "test-api" or "api"
@@ -48,7 +47,6 @@ async function StartTreasure(choice)
 
     let replyStart = await response.json();
 
-    qTotal = replyStart.numOfQuestions;
     session = replyStart.session;
 }
 
