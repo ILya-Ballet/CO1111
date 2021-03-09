@@ -22,8 +22,8 @@ and assigning tasks for features left to implement
 
 #### 04.03.2021
 
-resolving issues related to Treasure Hunt API requests and responses
-+ cookies implementation
+resolving issues related to Treasure Hunt API requests & responses
+plus cookies implementation
 
 
 #### 07.03.2021
