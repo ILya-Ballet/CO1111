@@ -5,6 +5,8 @@
     <title>Tresure Hunt HTML Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+
+
 </head>
 
 <body>
@@ -13,42 +15,26 @@
 <script src="../js/api.js"></script>
 
 <h1>Tresure Hunt</h1>
-<p>Question number 1 (Select 1 answer)</p>
 
-<form>
-    <input type="radio" id="answer1" name="answer1" value="answer1">
-    <label for="answer1">Answer1</label><br>
-    <input type="radio" id="answer2" name="answer2" value="answer2">
-    <label for="answer2">answer 2</label><br>
-    <input type="radio" id="answer3" name="answer3" value="answer3">
-    <label for="answer3">answer3</label>
+<p>Welcome to the tresure hunt!</p>
+<p>Type your user name bellow</p>
+
+<form action="question1.html">
+    <label>Username :</label>
+    <br>
+    <input type="text" id="username" name="username" value="">
+    <br>
+    <input type="submit" value="Submit">
 </form>
 
-<p>Question 2 (multiple answers)</p>
+<script>
+    var cookie = document.cookie;
+    document.cookie = username;
+</script>
 
-<form>
-    <div style="display: inline;">
-    <input type="checkbox"  name="answer1" value="answer1">
-    <label for="answer1">answer1</label><br>
-    <input type="checkbox"  name="answer2" value="answer2">
-    <label for="answer2">answer2</label><br>
-    <input type="checkbox"  name="answer3" value="answer3">
-    <label for="answer3">answer3</label>
-    </div>
-</form>
+<img src="thmap.jpg" alt="Treasure hunt map">
 
-<!-- add rating ? question ? (maybe something like a questionnaire ? ) -->
-<p>how did you find the tresure hunt ?</p>
-
-<form method="POST">
-            <select>
-                <option value="option1">Fun!</option>
-                <option value="option2">NeedsWork</option>
-                <option value="option3">not playable</option>
-            </select>
-    <input type="submit" id="my_input_submit" value="Submit">
-</form>
-
+<p>Happy hunting !</p>
 
 
 </body>
