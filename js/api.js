@@ -61,7 +61,7 @@ async function GetQuestion()
     }
 
     replyQuestion = await response.json();
-    window.location.replace("../html/question1.html");
+    window.location.pathname = "../html/question1.html";
 }
 
 async function Answer()
