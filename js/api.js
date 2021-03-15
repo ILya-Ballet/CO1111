@@ -1,7 +1,7 @@
 var replyList;
 var replyQuestion;
-var qCount = 0;
 var session;
+var progress = 0;
 const appname = "github";
 const APIroot = "https://codecyprus.org/th/api/"; // "test-api" or "api"
 
@@ -47,13 +47,12 @@ async function StartTreasure(choice)
     }
 
     let replyStart = await response.json();
-
     session = replyStart.session;
 }
 
 async function GetQuestion()
 {
-    let response = await fetch(APIroot + commands.QUESTION + "?session=");
+    let response = await fetch(APIroot + commands.QUESTION + "?session=" + session);
 
     if (!response.ok)
     {
@@ -62,6 +61,7 @@ async function GetQuestion()
     }
 
     replyQuestion = await response.json();
+    window.location.replace("../html/question1.html");
 }
 
 async function Answer()
