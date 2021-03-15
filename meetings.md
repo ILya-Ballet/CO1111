@@ -43,13 +43,13 @@ trying to implement javascript code to take full advantage of the API
 and re-organizing directories and names structure
 
 
-#### 12.03.2021 (planned)
+#### 12.03.2021
 
 planning on implementing additional extra features, such as user feedback
 and discussing qr-codes & geolocation
 
 
-#### 15.03.2021 (planned)
+#### 15.03.2021
 
 polishing up the website and comparing it with the assignment
 specification to ensure it meets the requirements.

@@ -8,13 +8,13 @@
 </head>
 
 <body>
-    <input type="radio" id="TH0" value="0">
+    <input type="radio" id="TH0" name="choice" value="0">
     <label id="labelTH0" for="TH0">Loading ...</label><br>
 
-    <input type="radio" id="TH1" value="1">
+    <input type="radio" id="TH1" name="choice" value="1">
     <label id="labelTH1" for="TH1">Loading ...</label><br>
 
-    <input type="radio" id="TH2" value="2">
+    <input type="radio" id="TH2" name="choice" value="2">
     <label id="labelTH2" for="TH2">Loading ...</label><br>
 
 
@@ -24,18 +24,40 @@
     <p>Welcome to the tresure hunt!</p>
     <p>Type your user name bellow</p>
 
-    <form action="question1.html">
+    <form>
         <label>Username :</label>
         <br>
         <input type="text" id="username" name="username" value="">
         <br>
-        <input type="submit" value="Submit">
+        <input id="btn" type="submit" value="Submit">
+
+        <script>
+            const btn = document.querySelector('#btn');
+
+            btn.onclick = function ()
+            {
+                const rbs = document.querySelectorAll('input[name="choice"]');
+                let selectedValue;
+
+                for (const rb of rbs)
+                {
+                    if (rb.checked)
+                    {
+                        selectedValue = rb.value;
+                        break;
+                    }
+                }
+                
+                StartTreasure(selectedValue);
+                GetQuestion();
+            };
+        </script>
     </form>
 
-    <script>
+    <!--script>
         var cookie = document.cookie;
         document.cookie = username;
-    </script>
+    </script-->
 
     <img src="thmap.jpg" alt="Treasure hunt map">
     <p>Happy hunting !</p>
