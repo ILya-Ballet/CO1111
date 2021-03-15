@@ -37,8 +37,8 @@ async function ListTreasures()
 async function StartTreasure(choice)
 {
     let response = await fetch(APIroot + commands.START + "?player="
-    + document.getElementById("nickname").value + "&app=" + appname
-    + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
+    + document.getElementById("username").value + "&app=" + appname
+    + "&treasure-hunt-id=" + choice);
 
     if (!response.ok)
     {
