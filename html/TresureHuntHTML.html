@@ -5,38 +5,40 @@
     <title>Tresure Hunt HTML Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-
-
 </head>
 
 <body>
-<button id="TH1"> Loading ... </button>
-<button id="TH2"> Loading ... </button>
-<script src="../js/api.js"></script>
+    <input type="radio" id="TH0" value="0">
+    <label id="labelTH0" for="TH0">Loading ...</label><br>
 
-<h1>Tresure Hunt</h1>
+    <input type="radio" id="TH1" value="1">
+    <label id="labelTH1" for="TH1">Loading ...</label><br>
 
-<p>Welcome to the tresure hunt!</p>
-<p>Type your user name bellow</p>
+    <input type="radio" id="TH2" value="2">
+    <label id="labelTH2" for="TH2">Loading ...</label><br>
 
-<form action="question1.html">
-    <label>Username :</label>
-    <br>
-    <input type="text" id="username" name="username" value="">
-    <br>
-    <input type="submit" value="Submit">
-</form>
 
-<script>
-    var cookie = document.cookie;
-    document.cookie = username;
-</script>
+    <script src="../js/api.js"></script>
+    <h1>Tresure Hunt</h1>
 
-<img src="thmap.jpg" alt="Treasure hunt map">
+    <p>Welcome to the tresure hunt!</p>
+    <p>Type your user name bellow</p>
 
-<p>Happy hunting !</p>
+    <form action="question1.html">
+        <label>Username :</label>
+        <br>
+        <input type="text" id="username" name="username" value="">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 
+    <script>
+        var cookie = document.cookie;
+        document.cookie = username;
+    </script>
+
+    <img src="thmap.jpg" alt="Treasure hunt map">
+    <p>Happy hunting !</p>
 
 </body>
-
 </html>

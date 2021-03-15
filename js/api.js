@@ -29,8 +29,9 @@ async function ListTreasures()
 
     replyList = await response.json();
 
-    document.getElementById("TH1").innerText = replyList.treasureHunts[0].name;
-    document.getElementById("TH2").innerText = replyList.treasureHunts[1].name;
+    document.getElementById("labelTH0").innerText = replyList.treasureHunts[0].name;
+    document.getElementById("labelTH1").innerText = replyList.treasureHunts[1].name;
+    document.getElementById("labelTH2").innerText = replyList.treasureHunts[2].name;
 }
 
 async function StartTreasure(choice)
