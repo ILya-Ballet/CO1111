@@ -2,62 +2,198 @@
 /*Glocal styling elements*/
 body
 {
-	color:  red;
-	background-color: cyan;
 	text-align: center;
-	font-family: Arial Narrow, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+
+}
+/*MENU*/
+.navbar {
+	overflow: hidden;
+	background-color: #BD8144;
+	position:relative;
+	top:20px;
+}
+.logoimg{
+	min-width:150px;
+	max-width:150px;
+	max-height:50px;
+	position:absolute;
+	top:170px;
+	left:12%;
+}
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover{
+	background-color: #333333;
 }
 
 
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+/*MENU END */
+
 /*Styling for the LANDING PAGE*/
+.titleH1{
+	font-size: 8vw;
+	position:relative;
+	color:white;
+	font-family: Brush Script MT, Cursive;
+}
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+	.container {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+.container{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	max-width:1200px;
+	flex-wrap:wrap;
+	z-index:1;
+	color:white;
+	float:left;
+}
+.container .card{
+	position:relative;
+	min-width:280px;
+	max-width:480px;
+	min-height:200px;
+	max-height:400px;
+	margin:30px;
+	box-shadow:20px 20px 50px rgba(0,0,0,0.5);
+	border-radius:15px;
+	background: rgba(255,255,255,0.1);
+	justify-content:center;
+	align-items:center;
+	border-top:1px solid rgba(255,255,255,0.5);
+	border-left :1px solid rgba(255,255,255,0.5);
+	backdrop-filter:blur(5px);)
+}
+.container .card .content{
+	padding:20px;
+	text-align:center;
+	transition:0.5s;
+}
+.container .card .content h2{
+	position:absolute;
+	font-size:4em;
+	top:-50px;
+	right:30px;
+	color:rgba(255,255,255,0.5);
+	pointer-events: none;
+}
+.container .card .content h3{
+	font-size:1.8em;
+	color: white;
+	z-index:1;
+}
+.container .card .content h6{
+	font-size:1em;
+	color:white;
+	font-weight:300;
+
+}
+
+
 
 .tMembers{
 	position:relative;
-	margin-top:50px;
+	margin-top:80px;
+	margin-right:auto;
+	margin-bottom:100px;
+	margin-left:auto;
 	background-color: white;
-	width:100%;
-	margin-bottom: 200px;
+	width:80%;
 	background-color: white;
 	border-radius: 15px;
-	margin-bottom: 100px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+	padding:10px;
+	color:black;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.memberName{
+	font-size: 3vw;
+	text-align:left;
+	padding-left:10vw;
+
+}
 
 .purposeContainer{
 	position:relative;
+	margin-top:80px;
+	margin-right:auto;
+	margin-bottom:100px;
+	margin-left:auto;
 	background-color: white;
-	width:100%;
-	margin-bottom: 200px;
+	width:80%;
 	background-color: white;
 	border-radius: 15px;
-	margin-bottom: 100px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
-
+	color:black;
+	padding:10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 .myButton {
+	position:relative;
+
 	box-shadow: inset 0px 1px 0px 0px #f7c5c0;
-	background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
-	background-color: #fc8d83;
+	background: linear-gradient(to bottom, #FF8000 5%, #E17305 100%);
+	background-color: #FF8000;
 	border-radius: 6px;
-	border: 1px solid #d83526;
+	border: 1px solid #CDCDCD;
 	display: inline-block;
 	cursor: pointer;
 	color: #ffffff;
 	font-family: Arial;
-	font-size: 15px;
+	font-size: 5vw;
 	font-weight: bold;
 	padding: 6px 24px;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #b23e35;
-	margin-bottom: 100px;
+	height: 8vw;
+
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
-	background-color:#e4685d;
+	background:linear-gradient(to bottom, #E17305 5%, #FF8000 100%);
+	background-color:#FF8000;
 }
 .myButton:active {
 	position:relative;
 
 }
-
+.SocialMedia{
+	width:70vw;
+	padding:10px;
+}
 
 
 /*Landing page css ending here*/
@@ -106,11 +242,12 @@ body
 }
 p{
 	font-weight:bold;
-text-decoration-line: underline;
+	text-decoration-line: underline;
 
 }
 
 .myButton2 {
+	position:absolute;
 	box-shadow: inset 0px 1px 0px 0px #f7c5c0;
 	background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
 	background-color: #fc8d83;
@@ -124,7 +261,8 @@ text-decoration-line: underline;
 	padding: 6px 14px;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #b23e35;
-	margin-bottom: 10px;
+	top:16%;
+	left:40%;
 
 }
 .myButton2:hover {
@@ -134,10 +272,11 @@ text-decoration-line: underline;
 .myButton2:active {
 	position:relative;
 
+
 }
 .startBtnContainer {
 
-margin-bottom: 10px;
+	margin-bottom: 10px;
 
 }
 
