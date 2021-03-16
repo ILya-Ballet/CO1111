@@ -58,6 +58,14 @@ img {vertical-align: middle;}
 	color:white;
 	font-family: Brush Script MT, Cursive;
 }
+.sidHeading{
+	position:relative;
+	font-size: 3vw;
+	position:relative;
+	color:white;
+	font-family: Papyrus, Fantasy;
+
+}
 .row {margin: 0 -5px;}
 
 /* Clear floats after the columns */
@@ -73,6 +81,9 @@ img {vertical-align: middle;}
 		margin-bottom: 20px;
 	}
 }
+.Cfloat{
+	float:left;
+}
 .container{
 	position:relative;
 	display:flex;
@@ -82,14 +93,14 @@ img {vertical-align: middle;}
 	flex-wrap:wrap;
 	z-index:1;
 	color:white;
-	float:left;
+
 }
 .container .card{
 	position:relative;
 	min-width:280px;
 	max-width:480px;
 	min-height:200px;
-	max-height:400px;
+	max-height:700px;
 	margin:30px;
 	box-shadow:20px 20px 50px rgba(0,0,0,0.5);
 	border-radius:15px;
@@ -125,43 +136,48 @@ img {vertical-align: middle;}
 
 }
 
+.Simage{
 
+	width: 100%;
+}
 
-.tMembers{
+.box{
+	box-shadow:20px 20px 50px rgba(0,0,0,0.5);
+	border-radius:5px;
+	min-width:80px;
+}
+
+.SButton{
 	position:relative;
-	margin-top:80px;
-	margin-right:auto;
-	margin-bottom:100px;
-	margin-left:auto;
-	background-color: white;
-	width:80%;
-	background-color: white;
-	border-radius: 15px;
+	box-shadow: inset 0px 1px 0px 0px #f7c5c0;
+	background: linear-gradient(to bottom, #FF8000 5%, #E17305 100%);
+	background-color: #FF8000;
+	border-radius: 6px;
+	border: 1px solid #CDCDCD;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+
+	font-weight: bold;
 	padding:10px;
-	color:black;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.memberName{
-	font-size: 3vw;
-	text-align:left;
-	padding-left:10vw;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #b23e35;
+	max-height: 5vw;
+	min-width:100px;
+	top:20px;
 
 }
-
-.purposeContainer{
+.SButton:hover {
+	background:linear-gradient(to bottom, #E17305 5%, #FF8000 100%);
+	background-color:#FF8000;
+}
+.SButton:active {
 	position:relative;
-	margin-top:80px;
-	margin-right:auto;
-	margin-bottom:100px;
-	margin-left:auto;
-	background-color: white;
-	width:80%;
-	background-color: white;
-	border-radius: 15px;
-	color:black;
-	padding:10px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
+
+
 .myButton {
 	position:relative;
 
