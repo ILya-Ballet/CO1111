@@ -2,32 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tresure Hunt HTML Page</title>
+    <title>Choose Tresure Hunt Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
 </head>
 
-<form action="question.html">
-    <input class ="sidHeading" type="submit" id="TH0" value="0">
-    <label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
+<body>
+    <form action="question.html">
+        <input class ="sidHeading" type="submit" id="TH0" value="0">
+        <label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
 
-    <input class="sidHeading" type="submit" id="TH1" value="1">
-    <label class="sidHeading" id="labelTH1" for="TH1">Loading ...</label><br>
+        <input class="sidHeading" type="submit" id="TH1" value="1">
+        <label class="sidHeading" id="labelTH1" for="TH1">Loading ...</label><br>
 
-    <input class="sidHeading" type="submit" id="TH2" value="2">
-    <label class="sidHeading" id="labelTH2" for="TH2">Loading ...</label><br>
-</form>
+        <input class="sidHeading" type="submit" id="TH2" value="2">
+        <label class="sidHeading" id="labelTH2" for="TH2">Loading ...</label><br>
+    </form>
 
-<script src="../js/api.js"></script>
-<script>
-    function showResults(){}
+    <script src="../js/api.js"></script>
+    <script>
+        function showResults(){}
 
-    const btn0 = document.getElementById('TH0');
-    const btn1 = document.getElementById('TH1');
-    const btn2 = document.getElementById('TH2');
+        const btn0 = document.getElementById('TH0');
+        const btn1 = document.getElementById('TH1');
+        const btn2 = document.getElementById('TH2');
 
-    btn0.addEventListener('click', StartTreasure(btn0.value));
-    btn1.addEventListener('click', StartTreasure(btn1.value));
-    btn2.addEventListener('click', StartTreasure(btn2.value));
-</script>
+        btn0.addEventListener('click', StartTreasure(btn0.value));
+        btn1.addEventListener('click', StartTreasure(btn1.value));
+        btn2.addEventListener('click', StartTreasure(btn2.value));
+    </script>
+</body>
+</html>
