@@ -62,6 +62,7 @@ async function GetQuestion()
     }
 
     replyQuestion = await response.json();
+    document.getElementById("Qtitle").text = replyQuestion.questionText
 }
 
 async function SendAnswer()
