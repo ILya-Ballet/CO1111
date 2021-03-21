@@ -48,6 +48,7 @@ async function StartTreasure(choice)
 
     let replyStart = await response.json();
     session = replyStart.session;
+    window.location.pathname = "../html/question1.html";
 }
 
 async function GetQuestion()
@@ -61,7 +62,6 @@ async function GetQuestion()
     }
 
     replyQuestion = await response.json();
-    window.location.pathname = "../html/question1.html";
 }
 
 async function SendAnswer()
