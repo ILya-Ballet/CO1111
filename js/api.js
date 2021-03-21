@@ -69,4 +69,4 @@ async function SendAnswer()
     //
 }
 
-ListTreasures();
+//ListTreasures();
