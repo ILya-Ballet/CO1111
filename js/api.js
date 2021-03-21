@@ -64,7 +64,7 @@ async function GetQuestion()
     window.location.pathname = "../html/question1.html";
 }
 
-async function Answer()
+async function SendAnswer()
 {
     //
 }

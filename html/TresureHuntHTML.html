@@ -12,18 +12,25 @@
 <video autoplay muted loop id="myVideo">
     <source src="../images/bg2.mp4" type="video/mp4">
 </video>
-<div >
-    <input class ="sidHeading" type="radio" id="TH0" value="0">
-    <label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
-</div>
-<input class="sidHeading" type="radio" id="TH1" value="1">
+
+
+<input class ="sidHeading" type="button" id="TH0" value="0">
+<label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
+
+<input class="sidHeading" type="button" id="TH1" value="1">
 <label class="sidHeading" id="labelTH1" for="TH1">Loading ...</label><br>
 
-<input class="sidHeading" type="radio" id="TH2" value="2">
+<input class="sidHeading" type="button" id="TH2" value="2">
 <label class="sidHeading" id="labelTH2" for="TH2">Loading ...</label><br>
 
 
 <script src="../js/api.js"></script>
+<script>
+const btn1 = document.getElementById('TH0');
+const btn2 = document.getElementById('TH1');
+const btn3 = document.getElementById('TH2');
+</script>
+
 <h1 class="titleH1">Tresure Hunt</h1>
 <div class="row">
     <div class ="container">
