@@ -37,7 +37,7 @@ async function ListTreasures()
 async function StartTreasure(choice)
 {
     let response = await fetch(APIroot + commands.START + "?player="
-    + document.getElementById("username").value + "&app=" + appname
+    + document.getElementById("username").text + "&app=" + appname
     + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
 
     if (!response.ok)
@@ -62,6 +62,7 @@ async function GetQuestion()
     }
 
     replyQuestion = await response.json();
+    document.getElementById("Qtitle").text = replyQuestion.questionText
 }
 
 async function SendAnswer()
@@ -69,4 +70,4 @@ async function SendAnswer()
     //
 }
 
-ListTreasures();
+//ListTreasures();
