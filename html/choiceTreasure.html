@@ -4,31 +4,49 @@
     <meta charset="UTF-8">
     <title>Choose Tresure Hunt Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link rel="stylesheet" href="../css/style.css"-->
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <form action="question.html">
-        <input class ="sidHeading" type="submit" id="TH0" value="0">
-        <label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
+<video autoplay muted loop id="myVideo">
+    <source src="../images/bg2.mp4" type="video/mp4">
+</video>
 
-        <input class="sidHeading" type="submit" id="TH1" value="1">
-        <label class="sidHeading" id="labelTH1" for="TH1">Loading ...</label><br>
+<div class="navbar">
+    <!--<img class = "lohimg" src="images/treasure-hunt-map_1464965.jpg">-->
+    <a href="../index.html">Home</a>
+</div>
 
-        <input class="sidHeading" type="submit" id="TH2" value="2">
-        <label class="sidHeading" id="labelTH2" for="TH2">Loading ...</label><br>
-    </form>
+<h1 class="titleH1">Available Treasure Hunt</h1>
+<div class="row">
+    <div class ="container">
+        <div class="card">
+            <div class ="content">
+                <h6><a class="one" href="#">Click the Treasure Hunts and start playing!</a></h6>
+                <form action="question.html">
+                    <input class ="sidHeading" type="submit" id="TH0" value="0">
+                    <label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
 
-    <script src="../js/api.js"></script>
-    <script>
-        const btn0 = document.getElementById('TH0');
-        const btn1 = document.getElementById('TH1');
-        const btn2 = document.getElementById('TH2');
+                    <input class="sidHeading" type="submit" id="TH1" value="1">
+                    <label class="sidHeading" id="labelTH1" for="TH1">Loading ...</label><br>
 
-        btn0.addEventListener('click', StartTreasure(btn0.value));
-        btn1.addEventListener('click', StartTreasure(btn1.value));
-        btn2.addEventListener('click', StartTreasure(btn2.value));
-    </script>
+                    <input class="sidHeading" type="submit" id="TH2" value="2">
+                    <label class="sidHeading" id="labelTH2" for="TH2">Loading ...</label><br>
+                </form>
+
+            </div>
+        </div></div></div>
+<script src="../js/api.js"></script>
+<script>
+    const btn0 = document.getElementById('TH0');
+    const btn1 = document.getElementById('TH1');
+    const btn2 = document.getElementById('TH2');
+
+    btn0.addEventListener('click', StartTreasure(btn0.value));
+    btn1.addEventListener('click', StartTreasure(btn1.value));
+    btn2.addEventListener('click', StartTreasure(btn2.value));
+</script>
 </body>
+
 </html>

@@ -38,7 +38,7 @@ body
 }
 
 .navbar a:hover{
-	background-color: #333333;
+	background-color: #B07539;
 }
 
 
@@ -160,7 +160,7 @@ img {vertical-align: middle;}
 	font-family: Arial;
 
 	font-weight: bold;
-	padding:10px;
+
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #b23e35;
 	max-height: 5vw;
@@ -219,6 +219,29 @@ img {vertical-align: middle;}
 
 /*App page css starting here*/
 
+a.one:link {color:#ffffff;text-decoration:none;}
+a.one:visited {color:#ffffff;}
+a.one:hover {font-size:150%; color:#ffcc00;}
+
+#TH0{
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:3px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px 4px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	margin-bottom: 10px;
+
+
+}
 #TH1{
 	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
 	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
