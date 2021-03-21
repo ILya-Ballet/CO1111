@@ -9,44 +9,41 @@
 </head>
 
 <body>
-<video autoplay muted loop id="myVideo">
-    <source src="../images/bg2.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop id="myVideo">
+        <source src="../images/bg2.mp4" type="video/mp4">
+    </video>
 
-<div class="navbar">
-    <!--<img class = "lohimg" src="images/treasure-hunt-map_1464965.jpg">-->
-    <a href="../index.html">Home</a>
-</div>
+    <div class="navbar">
+        <!--<img class = "lohimg" src="images/treasure-hunt-map_1464965.jpg">-->
+        <a href="../index.html">Home</a>
+    </div>
 
-<h1 class="titleH1">Available Treasure Hunt</h1>
-<div class="row">
-    <div class ="container">
-        <div class="card">
-            <div class ="content">
-                <h6><a class="one" href="#">Click the Treasure Hunts and start playing!</a></h6>
-                <form action="question.html">
-                    <input class ="sidHeading" type="submit" id="TH0" value="0">
-                    <label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
+    <h1 class="titleH1">Available Treasure Hunt</h1>
+    <div class="row">
+        <div class ="container">
+            <div class="card">
+                <div class ="content">
+                    <h6><a class="one" href="#">Click the Treasure Hunts and start playing!</a></h6>
+                    <form action="question.html">
+                        <input class ="sidHeading" type="submit" id="TH0" value="0">
+                        <label class ="sidHeading" id="labelTH0" for="TH0">Loading ...</label><br>
 
-                    <input class="sidHeading" type="submit" id="TH1" value="1">
-                    <label class="sidHeading" id="labelTH1" for="TH1">Loading ...</label><br>
+                        <input class="sidHeading" type="submit" id="TH1" value="1">
+                        <label class="sidHeading" id="labelTH1" for="TH1">Loading ...</label><br>
 
-                    <input class="sidHeading" type="submit" id="TH2" value="2">
-                    <label class="sidHeading" id="labelTH2" for="TH2">Loading ...</label><br>
-                </form>
-
+                        <input class="sidHeading" type="submit" id="TH2" value="2">
+                        <label class="sidHeading" id="labelTH2" for="TH2">Loading ...</label><br>
+                    </form>
+                </div>
             </div>
-        </div></div></div>
-<script src="../js/api.js"></script>
-<script>
-    const btn0 = document.getElementById('TH0');
-    const btn1 = document.getElementById('TH1');
-    const btn2 = document.getElementById('TH2');
+        </div>
+    </div>
 
-    btn0.addEventListener('click', StartTreasure(btn0.value));
-    btn1.addEventListener('click', StartTreasure(btn1.value));
-    btn2.addEventListener('click', StartTreasure(btn2.value));
-</script>
+    <script src="../js/api.js"></script>
+    <script src="../js/misc.js"></script>
+    <script>
+        ListTreasures();
+        GetTHChoice();
+    </script>
 </body>
-
 </html>
