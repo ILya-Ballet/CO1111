@@ -5,32 +5,39 @@
     <title>Finish</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<h1>Treasure Hunt</h1>
+<button class ="SButton"> Loading ... </button>
+<button class ="SButton"> Loading ... </button>
+<script src="../js/api.js"></script>
+<div class="row">
+    <div class ="container">
+        <div class="card">
+            <div class ="content">
+                <h3>Treasure Hunt</h3>
 
-<p>Congratulations you have finish the treasure hunt!!</p>
-<p>Please give us your feedback bellow !</p>
+                <h6>Congratulations you have finish the treasure hunt!!</h6>
+                <h6>Please give us your feedback bellow !</h6>
 
-<img src="feedback.png" alt="Feedback">
+                <img class="Simage" src="../images/feedback.png" alt="Feedback">
 
-<!-- add rating ? question ? (maybe something like a questionnaire ? ) -->
-<p>how did you find the treasure hunt ?</p>
-
-<form method="POST">
-    <select>
-        <option value="option1">Fun!</option>
-        <option value="option2">NeedsWork</option>
-        <option value="option3">not playable</option>
-    </select>
-    <input type="submit" id="my_input_submit" value="Submit">
-</form>
-
-
+                <!-- add rating ? question ? (maybe something like a questionnaire ? ) -->
+                <h6>how did you find the treasure hunt ?</h6>
+                <div>
+                    <form method="POST" action="TresureHuntLeaderBoard.html">
+                        <select class="box">
+                            <option value="option1">Fun!</option>
+                            <option value="option2">NeedsWork</option>
+                            <option value="option3">not playable</option>
+                        </select>
+                        <br>
+                        <input type="submit" class ="SButton" value="Submit">
+                    </form>
+                </div>
+            </div></div></div></div>
 
 </body>
 

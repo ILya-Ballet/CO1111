@@ -3,20 +3,23 @@
 body
 {
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ff9d00;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='50.1' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
 }
-#myVideo {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
+#myImage {
+	width: 100%;
+	height: 100%;
 
 }
 /*MENU*/
 .navbar {
 	overflow: hidden;
-	background-color: #BD8144;
+	background-color: #ff9d00;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23ffddb3' stroke-width='100' stroke-opacity='0.12' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fc8c1b' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f67b29' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ef6b34' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e55d3c' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d94f43' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc4348' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23bd384c' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23ad304f' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%239b2950' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23892450' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2377204e' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23651c4a' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23531945' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2341163f' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23311337' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23210f2e' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23150524' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
 	position:relative;
 	top:20px;
 }
@@ -38,7 +41,7 @@ body
 }
 
 .navbar a:hover{
-	background-color: #B07539;
+	background-color: #150524;
 }
 
 
@@ -53,18 +56,15 @@ img {vertical-align: middle;}
 
 /*Styling for the LANDING PAGE*/
 .titleH1{
-	font-size: 8vw;
+	font-size: 6vw;
 	position:relative;
 	color:white;
-	font-family: Brush Script MT, Cursive;
 }
 .sidHeading{
 	position:relative;
 	font-size: 3vw;
 	position:relative;
 	color:white;
-	font-family: Papyrus, Fantasy;
-
 }
 .row {margin: 0 -5px;}
 
@@ -150,27 +150,27 @@ img {vertical-align: middle;}
 .SButton{
 	position:relative;
 	box-shadow: inset 0px 1px 0px 0px #f7c5c0;
-	background: linear-gradient(to bottom, #FF8000 5%, #E17305 100%);
-	background-color: #FF8000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23ffddb3' stroke-width='100' stroke-opacity='0.12' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fc8c1b' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f67b29' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ef6b34' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e55d3c' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d94f43' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc4348' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23bd384c' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23ad304f' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%239b2950' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23892450' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2377204e' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23651c4a' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23531945' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2341163f' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23311337' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23210f2e' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23150524' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
 	border-radius: 6px;
 	border: 1px solid #CDCDCD;
 	display: inline-block;
 	cursor: pointer;
 	color: #ffffff;
 	font-family: Arial;
-
 	font-weight: bold;
-
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #b23e35;
 	max-height: 5vw;
-	min-width:100px;
+	min-width:120px;
 	top:20px;
+	min-height:37px;
 
 }
 .SButton:hover {
-	background:linear-gradient(to bottom, #E17305 5%, #FF8000 100%);
-	background-color:#FF8000;
+	background:linear-gradient(to bottom, #A035A8 5%, #150524 100%);
+	background-color:#150524;
 }
 .SButton:active {
 	position:relative;
@@ -180,10 +180,10 @@ img {vertical-align: middle;}
 
 .myButton {
 	position:relative;
-
 	box-shadow: inset 0px 1px 0px 0px #f7c5c0;
-	background: linear-gradient(to bottom, #FF8000 5%, #E17305 100%);
-	background-color: #FF8000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23ffddb3' stroke-width='100' stroke-opacity='0.12' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fc8c1b' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f67b29' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ef6b34' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e55d3c' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d94f43' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc4348' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23bd384c' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23ad304f' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%239b2950' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23892450' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2377204e' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23651c4a' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23531945' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2341163f' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23311337' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23210f2e' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23150524' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
 	border-radius: 6px;
 	border: 1px solid #CDCDCD;
 	display: inline-block;
@@ -199,8 +199,8 @@ img {vertical-align: middle;}
 
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #E17305 5%, #FF8000 100%);
-	background-color:#FF8000;
+	background:linear-gradient(to bottom, #A035A8 5%, #150524 100%);
+	background-color:#150524;
 }
 .myButton:active {
 	position:relative;
@@ -221,7 +221,7 @@ img {vertical-align: middle;}
 
 a.one:link {color:#ffffff;text-decoration:none;}
 a.one:visited {color:#ffffff;}
-a.one:hover {font-size:150%; color:#ffcc00;}
+a.one:hover {font-size:150%; color:#ff9d00;}
 
 #TH0{
 	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
