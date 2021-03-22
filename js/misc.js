@@ -8,3 +8,8 @@ function GetTHChoice()
     btn1.addEventListener('click', StartTreasure(btn1.value));
     btn2.addEventListener('click', StartTreasure(btn2.value));
 }
+
+function StoreCookies()
+{
+    document.cookie = "username=" + document.getElementById("username").value;
+}
