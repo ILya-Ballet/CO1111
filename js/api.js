@@ -66,11 +66,11 @@ async function GetQuestion()
     document.getElementById("Qtitle").text = replyQuestion.questionText
 }
 
-async function StartTreasure(choice)
+async function StartTreasure(choice, username)
 {
     let response = await fetch(APIroot + commands.START + "?player="
-    + GetCookie("username") + "&app=" + appname
-    + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
+    + username + "&app=" + appname + "&treasure-hunt-id="
+    + replyList.treasureHunts[choice].uuid);
 
     if (!response.ok)
     {
