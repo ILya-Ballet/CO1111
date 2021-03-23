@@ -12,4 +12,5 @@ function GetTHChoice()
 function StoreCookies()
 {
     document.cookie = "username=" + document.getElementById("username").value;
+    alert(document.cookie); // remove
 }
