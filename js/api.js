@@ -17,6 +17,24 @@ const commands = {
 
 }
 
+function GetCookie(name)
+{
+    // Split cookie string and get all individual name=value pairs in an array
+    var cookieArr = document.cookie.split(";");
+    
+    for(var i = 0; i < cookieArr.length; i++)
+    {
+        var cookiePair = cookieArr[i].split("=");
+
+        if(name == cookiePair[0].trim())
+        {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+    
+    return null;
+}
+
 async function ListTreasures()
 {
     let response = await fetch(APIroot + commands.LIST);
@@ -34,23 +52,6 @@ async function ListTreasures()
     document.getElementById("labelTH2").innerText = replyList.treasureHunts[2].name;
 }
 
-async function StartTreasure(choice)
-{
-    let response = await fetch(APIroot + commands.START + "?player="
-    + document.getElementById("username").value + "&app=" + appname
-    + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
-
-    if (!response.ok)
-    {
-        alert("HTTP-Error: " + response.status);
-        return 0;
-    }
-
-    let replyStart = await response.json();
-    session = replyStart.session;
-    window.location.pathname = "../html/question.html";
-}
-
 async function GetQuestion()
 {
     let response = await fetch(APIroot + commands.QUESTION + "?session=" + session);
@@ -63,6 +64,24 @@ async function GetQuestion()
 
     replyQuestion = await response.json();
     document.getElementById("Qtitle").text = replyQuestion.questionText
+}
+
+async function StartTreasure(choice)
+{
+    let response = await fetch(APIroot + commands.START + "?player="
+    + GetCookie("username") + "&app=" + appname
+    + "&treasure-hunt-id=" + replyList.treasureHunts[choice].uuid);
+
+    if (!response.ok)
+    {
+        alert("HTTP-Error: " + response.status);
+        return 0;
+    }
+
+    let replyStart = await response.json();
+    session = replyStart.session;
+    window.location.pathname = "../html/question.html";
+    GetQuestion();
 }
 
 async function SendAnswer()
